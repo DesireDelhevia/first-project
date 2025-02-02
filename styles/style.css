@@ -1,7 +1,53 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
   height: 293px;
   align-items: center;
 }
+
+.header 
+.footer {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.header__logo {
+  margin-left: 4px;
+}
+
+.header__links-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+  gap: 20px;
+  list-style: circle;
+}
+
+.header__contacts {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__link_active:first-child {
+  list-style: none; /* Убирает маркер у первого элемента */
+}
+
+.cover {
+  background-image: url(./image/lotus-flower.png);
+  background-size: 1100px 757px;
+  position: relative;
+  color:#FFFFFF;
+}
+
+.overlay {
+  position: absolute;
+}
+
+.cover__desctoption {
+  color: #FFFFFF;
+}
+
+
